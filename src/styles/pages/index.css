@@ -12,9 +12,10 @@
   color: black;
   line-height: 1.5;
   font-size: 16px;
+  border: 1px solid red;
   
 }
-body{
+html, body{
   overflow-x: hidden;
 }
 .menu-overlay.hidden {
