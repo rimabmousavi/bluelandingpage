@@ -12,6 +12,7 @@
   color: black;
   line-height: 1.5;
   font-size: 16px;
+  box-sizing: border-box;
   
 }
 html, body{
@@ -26,7 +27,11 @@ html, body{
   margin: 0 auto;
   padding: 2rem 8rem 0 8rem;
 }
-
+.no-scroll{
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
 .btn {
   display: inline-block;
   background: var(--accent);
@@ -654,7 +659,7 @@ nav ul li a {
 .join .container .join-form {
   background-color: rgba(28, 30, 83, 1);
   padding: 5rem;
-  width: -webkit-fill-available;
+  
 }
 
 .join .container .join-form h2 {

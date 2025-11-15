@@ -91,6 +91,8 @@
     display: flex;
     border: black 2px solid;
     justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
   }
   .container h2 {
     text-align: center;
@@ -213,13 +215,16 @@
   #questions > div > div:nth-child(1) {
     text-align: center;
   }
-  .join .container .join-content {
-    width: -webkit-fill-available;
-  }
+
   .join .container {
     grid-template-columns: 1fr;
   }
-
+  .join .container .join-form {
+    padding: 2rem;
+  }
+  .join .container .join-content {
+    padding: 2rem;
+  }
   .join .container .join-content h2 {
     font-size: 28px;
     padding-right: 0;
