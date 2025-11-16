@@ -13,6 +13,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
   .open-menu-btn {
+    position: relative;
     background: none;
     border: none;
     padding: 8px;
@@ -21,12 +22,13 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    color: white;
+    color: #fcd980;
+    z-index: 999;
   }
   .open-menu-btn:hover {
     opacity: 0.8;
   }
-  .offcanvass .close-menu-btn {
+  .offcanvas .close-menu-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -41,11 +43,11 @@
     color: #555;
     transition: all 0.3s ease;
   }
-  .offcanvass .close-menu-btn:hover {
+  .offcanvas .close-menu-btn:hover {
     background-color: #f0f0f0;
     color: #000;
   }
-  .offcanvass {
+  .offcanvas {
     position: absolute;
     top: 0;
     width: 70%;
@@ -55,13 +57,13 @@
     z-index: 4;
     transition: right 0.3s ease-in-out;
   }
-  .offcanvass.open {
+  .offcanvas.open {
     right: 0;
   }
-  .hamburger-menu.is-active .open-menu-btn {
+  /* .hamburger-menu.is-active .open-menu-btn {
     display: none;
-  }
-  .offcanvass .close-menu-btn {
+  } */
+  /* .offcanvas .close-menu-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -69,20 +71,20 @@
     background: none;
     cursor: pointer;
     font-size: 24px;
-    color: #333;
-  }
-  .offcanvass ul {
+    color: #fcd980;
+  } */
+  .offcanvas ul {
     list-style: none;
     padding: 50px 20px 20px 20px;
     margin: 0;
   }
-  .offcanvass ul li a {
+  .offcanvas ul li a {
     color: #333;
     display: block;
     padding: 12px 10px;
     text-decoration: none;
   }
-  .offcanvass .btn-secondary {
+  .offcanvas .btn-secondary {
     color: black;
     display: flex;
     border: black 2px solid;
