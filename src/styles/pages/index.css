@@ -13,7 +13,6 @@
   line-height: 1.5;
   font-size: 16px;
   box-sizing: border-box;
-  
 }
 html, body{
   overflow-x: hidden;
@@ -21,7 +20,10 @@ html, body{
 .menu-overlay.hidden {
     display: none;
 }
-
+header{
+  position: sticky;
+  z-index: 100;
+}
 .container {
   max-width: var(--container);
   margin: 0 auto;
@@ -58,7 +60,7 @@ html, body{
 nav {
   /* position: sticky; */
   top: 0;
-  z-index: 2;
+  /* z-index: 2; */
   backdrop-filter: blur(6px);
   background-color: #1c1e53;
 }
@@ -223,6 +225,7 @@ nav ul li a {
 }
 
 .about .about-content a {
+  
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -426,7 +429,6 @@ nav ul li a {
 
 .person {
   background: rgba(244, 246, 252, 0.5);
-  padding: 4rem 0;
 }
 
 .person .container {
@@ -434,7 +436,10 @@ nav ul li a {
   flex-direction: row;
   justify-content: space-between;
 }
-
+.slider{
+  width: 100%;
+  height: 100%;
+}
 .person .container .person-slider {
   display: flex;
   flex-direction: column;
@@ -447,6 +452,7 @@ nav ul li a {
   justify-content: start;
   align-items: center;
   gap: 1rem;
+  /* width: 30%; */
 }
 
 .person .container .person-intro h2 {
@@ -505,12 +511,16 @@ nav ul li a {
   border: 1px solid #e5e5e5;
   border-radius: 50%;
 }
-
+#person-slider-nav{
+position: absolute;
+z-index: 10;
+right: 2rem;
+bottom: 50px;
+}
 .slider-nav {
   display: flex;
   gap: 8px;
-  padding-left: 300px;
-  padding-top: 26px;
+  justify-content: flex-end;
 }
 
 .nav-arrow {

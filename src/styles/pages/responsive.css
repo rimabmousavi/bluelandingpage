@@ -23,12 +23,12 @@
     justify-content: center;
     transition: all 0.3s ease;
     color: #fcd980;
-    z-index: 999;
+    z-index: 101;
   }
   .open-menu-btn:hover {
     opacity: 0.8;
   }
-  .offcanvas .close-menu-btn {
+  /* .offcanvas .close-menu-btn {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -42,37 +42,24 @@
     height: 32px;
     color: #555;
     transition: all 0.3s ease;
-  }
-  .offcanvas .close-menu-btn:hover {
+  } */
+  /* .offcanvas .close-menu-btn:hover {
     background-color: #f0f0f0;
     color: #000;
-  }
+  } */
   .offcanvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 70%;
     background-color: white;
     right: -70%;
     height: 100vh;
-    z-index: 4;
+    z-index: 100;
     transition: right 0.3s ease-in-out;
   }
   .offcanvas.open {
     right: 0;
   }
-  /* .hamburger-menu.is-active .open-menu-btn {
-    display: none;
-  } */
-  /* .offcanvas .close-menu-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #fcd980;
-  } */
   .offcanvas ul {
     list-style: none;
     padding: 50px 20px 20px 20px;
@@ -149,12 +136,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
   }
 
   #about > div > div.about-content {
     width: 100%;
   }
+
   .person .container .person-slider .person-slide .figure .author-info {
     flex-direction: row;
     flex-wrap: wrap;
@@ -168,6 +155,9 @@
     flex-direction: row;
   }
   .app .main-app-buttons img {
+    width: 100%;
+  }
+  .person .container .person-intro{
     width: 100%;
   }
   .cards_grid {
@@ -272,5 +262,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .container .slider-container{
+    width: 100%;
   }
 }

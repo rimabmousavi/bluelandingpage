@@ -13,9 +13,13 @@
     />
     <link rel="stylesheet" href="./styles/pages/index.css" />
     <link rel="stylesheet" href="./styles/pages/responsive.css" />
+    <link rel="stylesheet" href="./styles/pages/slider.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-
   <body>
     <div id="overlay" class="menu-overlay hidden"></div>
     <header>
@@ -53,6 +57,7 @@
         </div>
       </nav>
     </header>
+    
     <section class="hero">
       <div class="container">
         <div class="hero-content">
@@ -65,13 +70,14 @@
         </div>
         <div class="hero-image">
           <img
-            src="assets\Illustration.png"
+            src="assets/Illustration.png"
             alt="Illustration"
             class="hero-image"
           />
         </div>
       </div>
     </section>
+
     <section id="app" class="app">
       <div class="container">
         <div class="app-content">
@@ -83,9 +89,9 @@
         </div>
         <div class="main-app-buttons">
           <a href="#" aria-label="Get it on Google Play">
-            <img src="assets\googleplay.svg" alt="Get it on Google Play" /> </a
+            <img src="assets/googleplay.svg" alt="Get it on Google Play" /> </a
           ><a href="#" aria-label="Download on the App Store">
-            <img src="assets\appstore.png" alt="Download on the App Store" />
+            <img src="assets/appstore.png" alt="Download on the App Store" />
           </a>
         </div>
       </div>
@@ -474,10 +480,99 @@
           <h2>Voices of our Casters</h2>
           <p>Creators worldwide share how they thrive with Kilppd.</p>
         </div>
-        <div class="person-slider">
-          <div class="person-slide">
-            <div class="figure">
-              <div class="blockquote">
+        <div class="slider-container">
+          <div id="person-keen-slider" class="keen-slider person">
+            <div class="keen-slider__slide number-slide1">
+              <div>
+                <p>
+                  "Kilppd revolutionized how I view my content's value. The
+                  ability to monetize through NFTs and exclusive memberships is
+                  a game-changer. Crucially, the blockchain protection
+                  guarantees my fans receive authentic, AI-safe content. My
+                  career finally feels future-proof and genuinely rewarding."
+                </p>
+              </div>
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
+                  <strong>Marcus Chen,</strong>
+                  <span>Crypto Artist & Live Commentator</span>
+                </div>
+              </div>
+            </div>
+            <div class="keen-slider__slide number-slide2">
+              <div>
+                <p>
+                  "The 'Live Safe' technology was what brought me to Kilppd.
+                  Knowing my work is protected from AI replication gives me
+                  peace of mind. Beyond safety, the platform has fostered a
+                  sense of community and deep engagement I never found on other
+                  sites. It's more than streaming; it's owning my legacy."
+                </p>
+              </div>
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
+                  <strong>Sophia Bell,</strong>
+                  <span>Digital Creator & Tech Reviewer</span>
+                </div>
+              </div>
+            </div>
+            <div class="keen-slider__slide number-slide3">
+              <div>
+                <p>
+                  "What sets Kilppd apart is the live-first approach. It forces
+                  authenticity, and my audience loves that genuine connection.
+                  They know what they are seeing is real and unaltered. This
+                  focus on unfiltered moments has drastically increased my
+                  viewer retention and the loyalty of my fan base."
+                </p>
+              </div>
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
+                  <strong>Alex Ramirez,</strong> <span>Gaming Caster</span>
+                </div>
+              </div>
+            </div>
+            <div class="keen-slider__slide number-slide4">
+              <div>
+                <p>
+                  "Kilppd has been instrumental in turning my passion into a
+                  sustainable business. The platform gives me the tools to
+                  diversify my income far beyond simple ads—think tickets for
+                  live events and premium content subscriptions. It’s the
+                  perfect ecosystem to grow and earn with full control over my
+                  output."
+                </p>
+              </div>
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
+                  <strong>Chloe Wang,</strong> <span>Lifestyle Vlogger</span>
+                </div>
+              </div>
+            </div>
+            <div class="keen-slider__slide number-slide5">
+              <div>
+                <p>
+                  "Kilppd is the only platform that truly values the creator.
+                  The combination of robust content protection, flexible
+                  monetization via NFTs, and a commitment to live, authentic
+                  interaction means I can finally focus 100% on creativity,
+                  knowing my work and income are secure."
+                </p>
+              </div>
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
+                  <strong>Noah Peters,</strong>
+                  <span>Music Producer & Live DJ</span>
+                </div>
+              </div>
+            </div>
+            <div class="keen-slider__slide number-slide6">
+              <div>
                 <p>
                   "Kilppd has transformed the way I connect with my fans. The
                   live-first creation approach assures my audience of genuine,
@@ -487,25 +582,19 @@
                   life."
                 </p>
               </div>
-              <div class="author-info">
-                <img src="assets\profilepic.png" alt="" />
-                <div class="author-details">
+              <div class="author-details">
+                <img src="assets/profilepic.png" alt="" />
+                <div>
                   <strong>Elena Rodriguez,</strong>
                   <span>Creative Director at Fiverr</span>
-                </div>
-                <div class="slider-nav">
-                  <button class="nav-arrow prev" aria-label="Previous">
-                    &lt;
-                  </button>
-                  <button class="nav-arrow next" aria-label="Next">&gt;</button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="slider-nav">
-                    <button class="nav-arrow prev" aria-label="Previous">&lt;</button>
-                    <button class="nav-arrow next" aria-label="Next">&gt;</button>
-                </div> -->
+          <div id="person-slider-nav" class="slider-nav stack">
+            <button class="nav-arrow prev" aria-label="Previous">&lt;</button>
+            <button class="nav-arrow next" aria-label="Next">&gt;</button>
+          </div>
         </div>
       </div>
     </section>
@@ -656,85 +745,87 @@
         </div>
       </div>
     </section>
-    <script src="./styles/pages/cnavas.js"></script>
+    <footer id="site-footer">
+      <div class="container">
+        <div class="container-top">
+          <div class="footer-container">
+            <div class="footer-top-row">
+              <div class="footer-brand">
+                <h3>KILPPD</h3>
+                <p>
+                  KILPPD: Revolutionizing the way casters create, monetize and
+                  share authentic moments.
+                </p>
+              </div>
+              <div class="footer-links">
+                <div class="footer-links-col">
+                  <h4>Product</h4>
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Customers</a></li>
+                  </ul>
+                </div>
+                <div class="footer-links-col">
+                  <h4>Company</h4>
+                  <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">jobs</a></li>
+                  </ul>
+                </div>
+                <div class="footer-links-col">
+                  <h4>Support</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-links-col">
+                  <h4>legal</h4>
+                  <ul>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom-row">
+              <div class="footer-contact-box">
+                <div class="contact-item">
+                  <span>Email me at</span>
+                  <a href="mailto:contact@website.com">contact@website.com</a>
+                </div>
+                <div class="contact-item">
+                  <span>Call us</span>
+                  <strong>+1 555 65768789</strong>
+                </div>
+              </div>
+              <div class="footer-app-buttons">
+                <a href="#" aria-label="Get it on Google Play">
+                  <img
+                    src="assets/googleplay.svg"
+                    alt="Get it on Google Play"
+                  /> </a
+                ><a href="#" aria-label="Download on the App Store">
+                  <img
+                    src="assets/appstore.png"
+                    alt="Download on the App Store"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <div class="footer-bottom">
+          <div class="footer-container">
+            <p>Copyright © 2025 Kilppd</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/cnavas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
-  <footer id="site-footer">
-    <div class="container">
-      <div class="container-top">
-        <div class="footer-container">
-          <div class="footer-top-row">
-            <div class="footer-brand">
-              <h3>KILPPD</h3>
-              <p>
-                KILPPD: Revolutionizing the way casters create, monetize and
-                share authentic moments.
-              </p>
-            </div>
-            <div class="footer-links">
-              <div class="footer-links-col">
-                <h4>Product</h4>
-                <ul>
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Customers</a></li>
-                </ul>
-              </div>
-              <div class="footer-links-col">
-                <h4>Company</h4>
-                <ul>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">jobs</a></li>
-                </ul>
-              </div>
-              <div class="footer-links-col">
-                <h4>Support</h4>
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="footer-links-col">
-                <h4>legal</h4>
-                <ul>
-                  <li><a href="#">terms</a></li>
-                  <li><a href="#">Privacy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom-row">
-            <div class="footer-contact-box">
-              <div class="contact-item">
-                <span>Email me at</span>
-                <a href="mailto:contact@website.com">contact@website.com</a>
-              </div>
-              <div class="contact-item">
-                <span>Call us</span>
-                <strong>+1 555 65768789</strong>
-              </div>
-            </div>
-            <div class="footer-app-buttons">
-              <a href="#" aria-label="Get it on Google Play">
-                <img
-                  src="assets\googleplay.svg"
-                  alt="Get it on Google Play"
-                /> </a
-              ><a href="#" aria-label="Download on the App Store">
-                <img
-                  src="assets\appstore.png"
-                  alt="Download on the App Store"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-bottom">
-      <div class="footer-bottom">
-        <div class="footer-container">
-          <p>Copyright © 2025 Kilppd</p>
-        </div>
-      </div>
-    </div>
-  </footer>
 </html>
