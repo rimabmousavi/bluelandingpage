@@ -55,7 +55,7 @@ function navigation(slider) {
   }
 
   function dotMarkup(remove) {
-    if (isPerson) return; // skip dots for person slider (we'll hide via CSS too)
+    if (isPerson) return; 
     if (remove) {
       removeElement(dots);
       return;
