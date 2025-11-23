@@ -20,7 +20,7 @@ html,body{
 
 @media (max-width: 768px) {
   .menu-overlay {
-    @apply fixed top-0 left-0 w-full h-screen opacity-50
+    @apply fixed top-0 left-0 w-full h-screen opacity-50 bg-black
   }
 }
 
