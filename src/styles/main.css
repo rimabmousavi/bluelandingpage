@@ -65,7 +65,7 @@ html,body{
   @apply w-12 h-12 rounded-full
 }
 .slider-nav {
-  @apply flex justify-end gap-1
+  @apply flex md:justify-end gap-1 p-4
 }
 .nav-arrow {
   @apply flex items-center justify-center transition-all transition duration-300 ease-in w-12 h-12 border border-solid border-neutral-200 rounded-full cursor-pointer 
