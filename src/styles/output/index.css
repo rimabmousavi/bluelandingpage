@@ -338,6 +338,9 @@
   .bg-\[\#1c1e53\] {
     background-color: #1c1e53;
   }
+  .bg-\[\#f4f6fc7e\] {
+    background-color: #f4f6fc7e;
+  }
   .bg-\[\#f4f6fc\] {
     background-color: #f4f6fc;
   }
@@ -373,6 +376,9 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -519,9 +525,24 @@
       color: var(--color-black);
     }
   }
-  .sm\:grid-rows-3 {
-    @media (width >= 40rem) {
-      grid-template-rows: repeat(3, minmax(0, 1fr));
+  .md\:absolute {
+    @media (width >= 48rem) {
+      position: absolute;
+    }
+  }
+  .md\:relative {
+    @media (width >= 48rem) {
+      position: relative;
+    }
+  }
+  .md\:-top-20 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * -20);
+    }
+  }
+  .md\:z-102 {
+    @media (width >= 48rem) {
+      z-index: 102;
     }
   }
   .md\:col-span-4 {
@@ -567,6 +588,11 @@
   .md\:grid-cols-12 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-rows-1 {
+    @media (width >= 48rem) {
+      grid-template-rows: repeat(1, minmax(0, 1fr));
     }
   }
   .md\:px-32 {
@@ -692,7 +718,6 @@ html,body {
   justify-content: space-between;
   gap: calc(var(--spacing) * 2);
   border-radius: var(--radius-2xl);
-  background-color: var(--color-white);
   padding: calc(var(--spacing) * 7);
 }
 .slider-container {
@@ -726,6 +751,7 @@ html,body {
   --tw-border-style: solid;
   border-style: solid;
   border-color: var(--color-neutral-200);
+  background-color: var(--color-white);
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
